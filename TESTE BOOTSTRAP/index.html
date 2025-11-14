@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbie e a Escola de Princesas</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffe6f7, #fff2b3, #ffffff); /* rosa clarinho, amarelo suave, branco */
+            color: #333;
+        }
+
+        /* CABEÇALHO */
+        .navbar {
+            background-color: #ffb6c1; /* rosa clarinho */
+            padding: 2rem 2rem; /* maior espaçamento */
+        }
+
+        .navbar a, .navbar .navbar-brand {
+            color: white !important;
+            font-weight: bold;
+            font-size: 1.8rem; /* maior fonte */
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover, .navbar .navbar-brand:hover {
+            color: #ffd966 !important; /* amarelo mais vivo ao passar o mouse */
+            text-decoration: underline;
+        }
+
+        .navbar .btn {
+            margin-left: 0.3rem;
+        }
+
+        /* CARROSSEL */
+        .carousel-item img {
+            height: 350px;
+            width: auto;
+            max-width: 400px;
+            object-fit: contain;
+            border-radius: 20px;
+            border: 5px solid rgba(255,255,255,0.7);
+            box-shadow: 0 0 15px rgba(255,255,255,0.6);
+            margin: auto;
+        }
+
+        /* CARTÕES */
+        .card {
+            border: none;
+            border-radius: 20px;
+            background-color: #ffffffcc;
+            color: #333;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+
+        .card-img-top {
+            height: 250px;
+            width: auto;
+            max-width: 200px;
+            object-fit: contain;
+            border-radius: 20px 20px 0 0;
+            margin: auto;
+        }
+
+        /* RODAPÉ */
+        footer {
+            background-color: #ffb6c1; /* rosa clarinho */
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .section-title {
+            color: #ffd966; /* amarelo chamativo */
+            font-weight: bold;
+        }
+
+        input.form-control {
+            border-radius: 20px;
+        }
+
+        button.btn-light {
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- CABEÇALHO -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand fs-2" href="#">Barbie e a Escola de Princesas</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link fs-5" href="#home">Início</a></li>
+        <li class="nav-item"><a class="nav-link fs-5" href="#personagens">Personagens</a></li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+        <button class="btn btn-light" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- SOBRE O FILME -->
+<section id="home" class="container text-center my-5">
+    <h1 class="section-title mb-4">Sobre o Filme</h1>
+    <p>Barbie e a Escola de Princesas é um filme encantador onde Barbie se torna princesa e aprende magia, dança e amizade em uma escola especial para jovens princesas.</p>
+</section>
+
+<!-- CARROSSEL -->
+<section class="container my-5 text-center">
+  <div id="carrosselBarbie" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagens/barbie1.jpg" alt="Barbie Princesa">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/barbie2.jpg" alt="Amigas da Barbie">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/barbie3.jpg" alt="Aula de magia">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/barbie4.jpg" alt="Evento na escola">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carrosselBarbie" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carrosselBarbie" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<!-- PERSONAGENS PRINCIPAIS -->
+<section id="personagens" class="container my-5">
+    <h2 class="text-center section-title mb-4">Personagens Principais</h2>
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="imagens/barbie.jpg" class="card-img-top" alt="Barbie">
+          <div class="card-body">
+            <h5>Barbie</h5>
+            <p>Protagonista, aprende a ser princesa e descobre magia e amizade.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="imagens/ken.jpg" class="card-img-top" alt="Ken">
+          <div class="card-body">
+            <h5>Ken</h5>
+            <p>Amigo leal, apoia Barbie nas aulas de magia e eventos da escola.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="imagens/tutti.jpg" class="card-img-top" alt="Tutti">
+          <div class="card-body">
+            <h5>Tutti</h5>
+            <p>Amiga divertida e energética, sempre animando as atividades na escola.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="imagens/whitney.jpg" class="card-img-top" alt="Whitney">
+          <div class="card-body">
+            <h5>Whitney</h5>
+            <p>Amiga alegre e animada, incentiva a magia e a dança entre as princesas.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SEGUNDA LINHA DE PERSONAGENS -->
+    <h2 class="text-center section-title mt-5 mb-4">Outros Personagens</h2>
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="imagens/eden.jpg" class="card-img-top" alt="Eden">
+          <div class="card-body">
+            <h5>Eden</h5>
+            <p>Amiga talentosa em música e dança, sempre apoiando Barbie.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="imagens/rochelle.jpg" class="card-img-top" alt="Rochelle">
+          <div class="card-body">
+            <h5>Rochelle</h5>
+            <p>Estudante dedicada e inteligente, inspira suas amigas a evoluir.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="imagens/sofia.jpg" class="card-img-top" alt="Sofia">
+          <div class="card-body">
+            <h5>Sofia</h5>
+            <p>Amiga corajosa, sempre pronta para aventuras mágicas no castelo.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</section>
+
+<!-- RODAPÉ -->
+<footer>
+    <p>© 2025 - Site inspirado em Barbie e a Escola de Princesas</p>
+    <p>Contato: contato@barbieprincesas.com | Telefone: (11) 99999-9999</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
